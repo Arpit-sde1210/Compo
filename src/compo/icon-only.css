@@ -1,0 +1,41 @@
+.icon-only-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.icon-only-btn:hover {
+  width: 28px;
+  height: 28px;
+  background: #E8E8E3;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.icon-only-btn:active {
+  width: 28px;
+  height: 28px;
+  background: #CECEC8;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+
+.icon-only-btn .link-icon {
+  width: 16px;
+  height: 16px;
+}

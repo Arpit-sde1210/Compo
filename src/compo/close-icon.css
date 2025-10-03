@@ -1,0 +1,56 @@
+.close-icon-btn {
+  position: relative;
+  width: 40px;
+  height: 40px;
+
+  background: transparent;
+  border-radius: 1000px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+  /* Additional */
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-icon-btn:hover {
+  width: 40px;
+  height: 40px;
+
+  background: #E8E8E3;
+  border-radius: 1000px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.close-icon-btn:active {
+  width: 40px;
+  height: 40px;
+
+  background: #CECEC8;
+  border-radius: 1000px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* Close Icon */
+.close-icon-btn .close-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: calc(50% - 20px/2);
+  top: calc(50% - 20px/2);
+}
