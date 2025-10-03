@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Compo/static/css/main.653898e1.css",
+    "main.js": "/Compo/static/js/main.ae5a8f90.js",
+    "static/js/453.5a047ff7.chunk.js": "/Compo/static/js/453.5a047ff7.chunk.js",
+    "index.html": "/Compo/index.html",
+    "main.653898e1.css.map": "/Compo/static/css/main.653898e1.css.map",
+    "main.ae5a8f90.js.map": "/Compo/static/js/main.ae5a8f90.js.map",
+    "453.5a047ff7.chunk.js.map": "/Compo/static/js/453.5a047ff7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.653898e1.css",
+    "static/js/main.ae5a8f90.js"
+  ]
+}
