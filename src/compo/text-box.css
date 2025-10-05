@@ -1,0 +1,58 @@
+.text-box {
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px 12px;
+  gap: 16px;
+
+  width: 652px;
+  height: 180px;
+
+  background: #FFFFFF;
+  border: 1px solid #EAE9E8;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+  /* Typography */
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  color: #000000;
+  transition: all 0.2s ease;
+  resize: none; /* Prevent resizing */
+}
+
+/* Hover State */
+.text-box:hover {
+  border: 1px solid #78716C;
+}
+
+/* Focus/Active State */
+.text-box:focus {
+  border: 1px solid #FF7262;
+  outline: none;
+}
+
+/* Filled State (when textarea has value) */
+.text-box.filled {
+  border: 1px solid #EAE9E8;
+}
+
+.text-box::placeholder {
+  color: #78716C;
+}
+
+.text-box:disabled {
+  background: #F8F8F8;
+  color: #78716C;
+  cursor: not-allowed;
+}

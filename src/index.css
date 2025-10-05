@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --text-secondary: #78716C;
+  --text-primary: #37352F;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
@@ -10,6 +31,7 @@
   padding: 40px;
 }
 
+/* Master Container */
 .master-container {
   background: white;
   border-radius: 12px;
@@ -39,4 +61,109 @@
   border-radius: 8px;
   margin-bottom: 20px;
   width: fit-content;
+}
+
+/* Toggle Container */
+.toggle-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+  width: 650px;
+  height: 456px;
+  background: #FCFCF9;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Toggles wrapper */
+.toggles-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Toggle item with label */
+.toggle-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #E8E8E3;
+  width: 100%;
+}
+
+.toggle-item span {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+  width: 750px;
+  background: #FCFCF9;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs wrapper */
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+/* Input group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #E8E8E3;
+}
+
+.input-group h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #37352F;
+  margin: 0;
+}
+/* Main Components Container */
+.main-components-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+
+  width: 950px; /* Card width (900px) + padding */
+  background: #FCFCF9;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Components wrapper */
+.components-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
 }
