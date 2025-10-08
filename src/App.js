@@ -119,7 +119,7 @@ function App() {
         
         <div className="inputs-wrapper">
           <div className="input-group">
-            <h3>Text Input</h3>
+            <h4>Label</h4>
             <InputText 
               placeholder="Enter text here..."
               value={inputValue}
@@ -128,7 +128,7 @@ function App() {
           </div>
 
           <div className="input-group">
-            <h3>Link Input</h3>
+            <h4>Label</h4>
             <InputLink 
               placeholder="https://example.com"
               value={linkValue}
@@ -137,7 +137,7 @@ function App() {
           </div>
 
           <div className="input-group">
-            <h3>Text Box</h3>
+            <h4>Task</h4>
             <TextBox 
               placeholder="Enter your message here..."
               value={textValue}

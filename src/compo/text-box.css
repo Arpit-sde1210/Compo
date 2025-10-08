@@ -4,10 +4,9 @@
   /* Auto layout */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 12px 12px;
-  gap: 16px;
+  justify-content: flex-start; /* Changed from space-between */
+  align-items: flex-start; /* Changed from center */
+  padding: 8px 12px 12px; /* Top padding already 8px */
 
   width: 652px;
   height: 180px;
@@ -27,13 +26,15 @@
   font-family: 'Work Sans', sans-serif;
   font-size: 14px;
   color: #000000;
-  transition: all 0.2s ease;
   resize: none; /* Prevent resizing */
+  
+  /* Text alignment and spacing */
+  line-height: 1.5;
 }
 
 /* Hover State */
 .text-box:hover {
-  border: 1px solid #78716C;
+  border: 1px solid #FF7262;
 }
 
 /* Focus/Active State */
@@ -49,6 +50,8 @@
 
 .text-box::placeholder {
   color: #78716C;
+  /* Placeholder text ko bhi top align karo */
+  vertical-align: top;
 }
 
 .text-box:disabled {

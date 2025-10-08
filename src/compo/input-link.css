@@ -26,27 +26,23 @@
   font-family: 'Work Sans', sans-serif;
   font-size: 14px;
   color: #000000;
-  transition: all 0.2s ease;
+
+  /* Transition for smooth effects */
+  transition: all 0.2s ease-in-out;
 }
 
-/* Hover State */
+/* Hover State - Active wali color */
 .input-link:hover {
-  padding: 0px 4px 0px 12px;
-  gap: 8px;
-  border: 1px solid #78716C;
+  border: 1px solid #FF7262;
 }
 
 /* Focus/Active State */
 .input-link:focus-within {
-  padding: 0px 4px 0px 12px;
-  gap: 8px;
   border: 1px solid #FF7262;
 }
 
 /* Filled State (when input has value) */
 .input-link.filled {
-  padding: 0px 12px;
-  gap: 16px;
   border: 1px solid #EAE9E8;
 }
 

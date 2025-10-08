@@ -29,10 +29,8 @@
   /* Additional */
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease;
 }
 
-.dropdown-btn:hover,
 .dropdown-btn:active {
   /* Auto layout */
   display: flex;
