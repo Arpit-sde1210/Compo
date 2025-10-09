@@ -149,12 +149,12 @@ function App() {
 
       {/* Separate Master Container for Main Components */}
       <div className="main-components-container">
-        <h1 className="master-heading">Main Components</h1>
+        <h4 className="master-heading">Main Components</h4>
         
         <div className="components-wrapper">
           <TestCard 
-            title="Test Card Component"
-            description="This is a test card with action buttons"
+            title="New Onboarding Flow"
+            description="0 recordings . 12 October 2025"
             onPreview={handlePreview}
             onCopy={handleCardCopy}
             onEdit={handleCardEdit}

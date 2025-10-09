@@ -1,35 +1,25 @@
+.text-box-container {
+  position: relative;
+  width: 652px;
+  display: block;
+}
+
 .text-box {
   box-sizing: border-box;
-
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Changed from space-between */
-  align-items: flex-start; /* Changed from center */
-  padding: 8px 12px 12px; /* Top padding already 8px */
-
-  width: 652px;
+  width: 100%;
   height: 180px;
-
+  padding: 12px 12px 30px; /* Bottom padding increase for counter space */
   background: #FFFFFF;
   border: 1px solid #EAE9E8;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-
-  /* Typography */
   font-family: 'Work Sans', sans-serif;
   font-size: 14px;
   color: #000000;
-  resize: none; /* Prevent resizing */
-  
-  /* Text alignment and spacing */
+  transition: all 0.2s ease;
+  resize: none;
   line-height: 1.5;
+  display: block;
 }
 
 /* Hover State */
@@ -43,19 +33,21 @@
   outline: none;
 }
 
-/* Filled State (when textarea has value) */
-.text-box.filled {
-  border: 1px solid #EAE9E8;
-}
-
 .text-box::placeholder {
   color: #78716C;
-  /* Placeholder text ko bhi top align karo */
-  vertical-align: top;
 }
 
-.text-box:disabled {
-  background: #F8F8F8;
+/* Character Counter - FIXED */
+.character-counter {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
   color: #78716C;
-  cursor: not-allowed;
+  background: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #EAE9E8; /* Subtle border for visibility */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
