@@ -1,12 +1,11 @@
 .copy-btn {
   /* Auto layout */
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px 8px;
+  padding: 0px 12px;
   gap: 6px;
 
-  width: 72px;
   height: 28px;
 
   background: #000000;
@@ -30,69 +29,21 @@
   /* Additional */
   border: none;
   cursor: pointer;
+  
+  /* Dynamic width */
+  width: auto;
+  min-width: fit-content;
 }
 
-.copy-btn:hover {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 8px;
-  gap: 6px;
-
-  width: 72px;
-  height: 28px;
-
+/* Hover state - ONLY when not copied */
+.copy-btn:not(.copied):hover {
   background: #000000;
   opacity: 0.6;
-  /* Button Shadow */
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-  /* Typography */
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: #FFFFFF;
 }
 
 .copy-btn.copied {
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 8px;
-  gap: 6px;
-
-  width: 86px;
-  height: 28px;
-
   background: #000000;
-  /* Button Shadow */
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
-
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-
-  /* Typography */
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: #FFFFFF;
+  cursor: default;
 }
 
 /* Copy Icon for Rest and Hover states */

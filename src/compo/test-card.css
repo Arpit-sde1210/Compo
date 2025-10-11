@@ -25,22 +25,43 @@
   flex-grow: 0;
 }
 
+/* Item container styling */
 .test-card-content {
   display: flex;
   flex-direction: column;
   gap: 4px;
   flex: 1;
+  padding: 12px 0px;
 }
 
 .test-card-title {
   font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
   font-size: 16px;
-  font-weight: 600;
-  color: #000000;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #37352F;
   margin: 0;
 }
 
 .test-card-description {
+  /* Frame 1116600682 */
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+
+  width: 154px;
+  height: 18px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
   font-family: 'Work Sans', sans-serif;
   font-size: 14px;
   color: #78716C;
@@ -49,64 +70,72 @@
 
 .test-card-actions {
   display: flex;
-  gap: 12px;
+  gap: 8px;
   align-items: center;
 }
 
+/* Action buttons styling */
 .test-card-action-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 6px;
-  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s ease;
+  margin-right: 0px;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: none;
+  border: none;
   position: relative;
+  color: #555;
+  transition: all 0.2s ease;
 }
 
+/* Hover effects */
 .test-card-action-btn:hover {
-  background: #F5F5F4;
+  background-color: #F5F5F4;
+  color: #000;
 }
 
-/* Tooltip Styles */
-.test-card-action-btn::after {
+/* INDIVIDUAL BUTTON HOVER - Sirf usi button ka tooltip dikhao */
+.test-card-action-btn:hover::after {
   content: attr(data-tooltip);
   position: absolute;
-  bottom: -40px;
+  bottom: -35px;
   left: 50%;
   transform: translateX(-50%);
   background: #000000;
   color: #FFFFFF;
-  padding: 6px 12px;
-  border-radius: 4px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Hide tooltips by default */
+.test-card-action-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000000;
+  color: #FFFFFF;
+  padding: 8px 12px;
+  border-radius: 6px;
   font-family: 'Work Sans', sans-serif;
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.2s ease;
   z-index: 1000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.test-card-action-btn::before {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 4px solid transparent;
-  border-bottom-color: #000000;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s ease;
-  z-index: 1001;
-}
-
-.test-card-action-btn:hover::after,
-.test-card-action-btn:hover::before {
-  opacity: 1;
-  visibility: visible;
-}
+/* Arrow completely removed as requested */
