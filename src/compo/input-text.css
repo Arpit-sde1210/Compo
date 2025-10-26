@@ -48,7 +48,7 @@
 .input-text.filled {
   padding: 0px 12px;
   gap: 16px;
-  border: 1px solid #EAE9E8;
+  border: 1px solid #FF7262;
 }
 
 .input-text::placeholder {

@@ -45,8 +45,6 @@
 }
 
 .test-card-description {
-  /* Frame 1116600682 */
-  
   /* Auto layout */
   display: flex;
   flex-direction: row;
@@ -63,15 +61,17 @@
   flex-grow: 0;
 
   font-family: 'Work Sans', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #78716C;
   margin: 0;
 }
 
 .test-card-actions {
   display: flex;
+  flex-direction: row;
   gap: 8px;
   align-items: center;
+  justify-content: flex-start;
 }
 
 /* Action buttons styling */
@@ -87,7 +87,6 @@
   border: none;
   position: relative;
   color: #555;
-  transition: all 0.2s ease;
 }
 
 /* Hover effects */
@@ -96,7 +95,7 @@
   color: #000;
 }
 
-/* INDIVIDUAL BUTTON HOVER - Sirf usi button ka tooltip dikhao */
+/* INDIVIDUAL BUTTON HOVER */
 .test-card-action-btn:hover::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -137,5 +136,3 @@
   z-index: 1000;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
-
-/* Arrow completely removed as requested */

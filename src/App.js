@@ -12,6 +12,8 @@ import InputText from './compo/input-text';
 import InputLink from './compo/input-link';
 import TextBox from './compo/text-box';
 import TestCard from './compo/test-card';
+import RecordingCard from './compo/recordingcard';
+import Menu from './compo/menu';
 import './index.css';
 
 function App() {
@@ -63,25 +65,34 @@ function App() {
   const handleCardEdit = () => console.log('Card edit clicked');
   const handleCardDelete = () => console.log('Card delete clicked');
 
+  // Recording Card data
+  const recordingData = {
+    username: "John Doe",
+    stats: "284 Fill x 160",
+    timestamp: "12:44 PM · 12 Oct 2024",
+    question: "What do you want to know?",
+    duration: "3:12 min"
+  };
+
   return (
     <div className="app-container">
-      {/* Master Container for Buttons */}
-      <div className="master-container">
-        <h1 className="master-heading">Buttons</h1>
-        
-        {/* Container 1 - Small buttons */}
-        <div className="button-container">
+      {/* Single Main Section */}
+      <div className="section">
+        <h1 className="master-heading">UI Components</h1>
+
+        {/* Buttons Section */}
+        <h2 className="section-heading">Buttons</h2>
+        <div className="button-row">
           <Button onClick={handleClick}>
             Home
           </Button>
-          
+
           <IconButton onClick={handleSettingsClick}>
             Settings
           </IconButton>
         </div>
 
-        {/* Container 2 - Primary and Error buttons */}
-        <div className="primary-button-container">
+        <div className="button-row">
           <PrimaryButton onClick={handleEditClick}>
             Edit
           </PrimaryButton>
@@ -90,37 +101,34 @@ function App() {
           </ErrorButton>
         </div>
 
-        {/* Container 3 - Copy button */}
-        <div className="primary-button-container">
+        <div className="button-row">
           <CopyButton onClick={handleCopyClick} />
         </div>
 
-        {/* Container 4 - Dropdown button */}
-        <div className="dropdown-container">
+        <div className="button-row">
           <DropdownButton onClick={handleDropdownClick} />
         </div>
-      </div>
 
-      {/* Separate Master Container for Icons */}
-      <div className="master-container">
-        <h1 className="master-heading">Icons</h1>
-        
-        {/* Container 5 - Icons Only */}
-        <div className="icons-container">
+        {/* Horizontal Line 1 */}
+        <div className="horizontal-line"></div>
+
+        {/* Icons Section */}
+        <h2 className="section-heading">Icons</h2>
+        <div className="button-row">
           <IconOnlyButton onClick={handleIconOnlyClick} />
           <CloseIconButton onClick={handleCloseClick} />
           <ToggleSwitch onToggle={handleToggle} defaultOn={true} />
         </div>
-      </div>
 
-      {/* Separate Master Container for Input Fields */}
-      <div className="input-container">
-        <h1 className="master-heading">Input Fields</h1>
-        
+        {/* Horizontal Line 2 */}
+        <div className="horizontal-line"></div>
+
+        {/* Input Fields Section */}
+        <h2 className="section-heading">Input Fields</h2>
         <div className="inputs-wrapper">
           <div className="input-group">
             <h4>Label</h4>
-            <InputText 
+            <InputText
               placeholder="Enter text here..."
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
@@ -129,7 +137,7 @@ function App() {
 
           <div className="input-group">
             <h4>Label</h4>
-            <InputLink 
+            <InputLink
               placeholder="https://example.com"
               value={linkValue}
               onChange={(e) => setLinkValue(e.target.value)}
@@ -138,27 +146,46 @@ function App() {
 
           <div className="input-group">
             <h4>Task</h4>
-            <TextBox 
+            <TextBox
               placeholder="Enter your message here..."
               value={textValue}
               onChange={(e) => setTextValue(e.target.value)}
             />
           </div>
         </div>
-      </div>
 
-      {/* Separate Master Container for Main Components */}
-      <div className="main-components-container">
-        <h4 className="master-heading">Main Components</h4>
-        
+        {/* Horizontal Line 3 */}
+        <div className="horizontal-line"></div>
+
+        {/* Main Components Section */}
+        <h2 className="section-heading">Main Components</h2>
         <div className="components-wrapper">
-          <TestCard 
+          <TestCard
             title="New Onboarding Flow"
-            description="0 recordings . 12 October 2025"
+            description="0 recordings . 12 Oct 2025"
             onPreview={handlePreview}
             onCopy={handleCardCopy}
             onEdit={handleCardEdit}
             onDelete={handleCardDelete}
+          />
+        </div>
+        <div className="horizontal-line"></div>
+        <h2 className="section-heading">Recording Card</h2>
+
+        <div className="components-wrapper">
+          {/* Recording Card Component */}
+          <RecordingCard
+            username={recordingData.username}
+            stats={recordingData.stats}
+            timestamp={recordingData.timestamp}
+            question={recordingData.question}
+            duration={recordingData.duration}
+          />
+        </div>
+        <div className="horizontal-line"></div>
+        <h2 className="section-heading">Menu</h2>
+        <div className="components-wrapper">
+          <Menu 
           />
         </div>
       </div>

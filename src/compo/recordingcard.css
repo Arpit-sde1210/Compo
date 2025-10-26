@@ -1,0 +1,187 @@
+/* Recording Card */
+.recording-card {
+  box-sizing: border-box;
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  
+  width: 284px;
+  height: 238px;
+  
+  background: #FFFFFF;
+  border: 1px solid #EAE9E8;
+  /* Card Shadow */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  overflow: hidden;
+}
+
+/* Video Section - Frame 1116601075 */
+.video-section {
+  width: 284px;
+  height: 160px;
+  position: relative;
+  background: #f0f0f0; /* Placeholder for image */
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* Hover effect on video section */
+.recording-card:hover .video-section {
+  background: #00000099; /* 60% opacity black */
+}
+
+/* Video overlay with gradient */
+.video-overlay {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Enhance overlay on hover */
+.recording-card:hover .video-overlay {
+  background: rgba(0, 0, 0, 0.4); /* Darker overlay on hover */
+}
+
+/* Duration badge - Frame 1116601077 */
+.duration-badge {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+
+  position: absolute;
+  width: 65px;
+  height: 24px;
+  right: 12px;
+  bottom: 12px;
+
+  background: #37352F;
+  border-radius: 1000px;
+}
+
+/* 3:12 min - Exact CSS as specified */
+.duration-text {
+  width: 49px;
+  height: 8px;
+
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+  
+  /* Note: leading-trim and text-edge are draft CSS properties */
+  /* leading-trim: both; */
+  /* text-edge: cap; */
+
+  color: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
+  /* Additional properties for proper display */
+  display: block;
+  text-align: center;
+}
+
+/* Content Section - Frame 1116600698 */
+.content-section {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 4px;
+  
+  width: 284px;
+  height: 78px;
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+/* Video Title - Replaces Question */
+.video-title {
+  width: 100%;
+  height: auto;
+  
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #37352F;
+  
+  margin-bottom: 8px;
+}
+
+/* Video Info Container - Replaces User Info */
+.video-info-container {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  
+  width: 133px;
+  height: 18px;
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* Video Date and Time */
+.video-date-time {
+  width: 133px;
+  height: 18px;
+
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+
+  color: #78716C;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .recording-card {
+    width: 100%;
+    max-width: 284px;
+  }
+}

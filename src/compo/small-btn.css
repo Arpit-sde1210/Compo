@@ -13,7 +13,6 @@
 
   /* Inside auto layout */
   flex: none;
-  order: 1;
   flex-grow: 0;
 
   /* Typography - Rest State */
@@ -28,7 +27,6 @@
   /* Additional */
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease;
   background: transparent;
   
   /* Dynamic width */

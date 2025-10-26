@@ -43,7 +43,7 @@
 
 /* Filled State (when input has value) */
 .input-link.filled {
-  border: 1px solid #EAE9E8;
+  border: 1px solid #FF7262;
 }
 
 .input-link:disabled {
