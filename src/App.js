@@ -14,6 +14,7 @@ import TextBox from './compo/text-box';
 import TestCard from './compo/test-card';
 import RecordingCard from './compo/recordingcard';
 import Menu from './compo/menu';
+import Recorder from './compo/recorder';
 import './index.css';
 
 function App() {
@@ -186,6 +187,12 @@ function App() {
         <h2 className="section-heading">Menu</h2>
         <div className="components-wrapper">
           <Menu 
+          />
+        </div>
+        <div className="horizontal-line"></div>
+        <h2 className="section-heading">Recording</h2>
+        <div className="components-wrapper">
+          <Recorder
           />
         </div>
       </div>

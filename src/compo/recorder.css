@@ -1,0 +1,114 @@
+/* Recorder Card */
+.recorder-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: 120px;
+  height: 183px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* Circular Video Preview */
+.video-preview {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #F5F5F4;
+  border: 2px solid #EAE9E8;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Video visual/placeholder inside circle */
+.video-visual {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #37352F;
+  opacity: 0.1;
+}
+
+/* Control Card - Black background with curved sides */
+.control-card {
+  width: 120px;
+  height: 55px;
+  background: black;
+  border-radius: 27.5px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  position: relative;
+}
+
+/* Stop Button - Circular with orange background */
+.stop-button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #FF613E;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.stop-button:hover {
+  background: #E5532D;
+  transform: scale(1.05);
+}
+
+.stop-button:active {
+  background: #CC4926;
+  transform: scale(0.95);
+}
+
+/* White square inside stop button */
+.stop-button::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 4px;
+}
+
+/* Timer Display - White text on right side */
+.timer-display {
+  font-family: 'Work Sans';
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin-left: 12px;
+  flex: 1;
+}
+
+.stop-button.loading {
+  background: #6B7280;
+  cursor: not-allowed;
+}
+
+.stop-button.loading::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: transparent;
+  border: 2px solid white;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
