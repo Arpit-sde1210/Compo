@@ -1,6 +1,6 @@
-import React from 'react';
 import './test-card.css';
 import Button from './small-btn';
+import IconOnlyButton from './icon-only';
 
 const TestCard = ({ title, description, onPreview, onCopy, onEdit, onDelete }) => {
   return (
@@ -22,23 +22,11 @@ const TestCard = ({ title, description, onPreview, onCopy, onEdit, onDelete }) =
           </svg>
         </Button>
 
-        {/* Copy Button */}
-        <button 
-          className="test-card-action-btn copy" 
+        {/* Copy Button - Using IconOnlyButton component */}
+        <IconOnlyButton 
           onClick={onCopy}
           data-tooltip="Copy Link"
-        >
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clipPath="url(#clip0_246_1369)">
-              <path d="M12.7115 14.6439C12.9882 15.0138 13.3412 15.3199 13.7466 15.5413C14.152 15.7628 14.6002 15.8945 15.061 15.9275C15.5217 15.9605 15.9842 15.894 16.417 15.7326C16.8498 15.5711 17.2428 15.3185 17.5694 14.9918L19.5022 13.059C20.089 12.4514 20.4137 11.6377 20.4064 10.793C20.3991 9.94838 20.0603 9.14041 19.463 8.54314C18.8657 7.94586 18.0577 7.60707 17.2131 7.59973C16.3685 7.59239 15.5547 7.91709 14.9472 8.5039L13.839 9.60562M15.2886 13.3553C15.0119 12.9854 14.6589 12.6794 14.2536 12.4579C13.8482 12.2364 13.3999 12.1047 12.9392 12.0717C12.4784 12.0387 12.016 12.1052 11.5832 12.2666C11.1504 12.4281 10.7573 12.6807 10.4308 13.0074L8.49791 14.9403C7.91111 15.5478 7.58641 16.3616 7.59375 17.2062C7.60109 18.0508 7.93988 18.8588 8.53716 19.4561C9.13443 20.0534 9.9424 20.3921 10.787 20.3995C11.6317 20.4068 12.4454 20.0821 13.053 19.4953L14.1547 18.3936" stroke="currentColor" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_246_1369">
-                <rect width="16" height="16" fill="white" transform="translate(6 6)"/>
-              </clipPath>
-            </defs>
-          </svg>
-        </button>
+        />
 
         {/* Edit Button */}
         <button 

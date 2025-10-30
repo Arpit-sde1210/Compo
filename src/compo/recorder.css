@@ -12,11 +12,11 @@
   flex-grow: 0;
 }
 
-/* Circular Video Preview */
+/* Circular Video Preview - 120px diameter */
 .video-preview {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 120px;  /* ✅ 120px diameter */
+  height: 120px; /* ✅ 120px diameter */
+  border-radius: 50%; /* ✅ Perfect circle */
   background: #F5F5F4;
   border: 2px solid #EAE9E8;
   overflow: hidden;
@@ -26,16 +26,23 @@
   position: relative;
 }
 
-/* Video visual/placeholder inside circle */
+/* Video visual - Camera feed */
 .video-visual {
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  background: #37352F;
-  opacity: 0.1;
+  object-fit: cover; /* ✅ Camera feed ko circle me fit karega */
 }
 
-/* Control Card - Black background with curved sides */
+.video-placeholder {
+  font-family: 'Work Sans';
+  font-size: 10px;
+  color: #78716C;
+  text-align: center;
+  padding: 0 8px;
+}
+
+/* Control Card - Black with curved sides */
 .control-card {
   width: 120px;
   height: 55px;
@@ -64,8 +71,7 @@
 }
 
 .stop-button:hover {
-  background: #E5532D;
-  transform: scale(1.05);
+  background: #ff390b;
 }
 
 .stop-button:active {
@@ -106,6 +112,36 @@
   border-top: 2px solid transparent;
   border-radius: 50%;
   animation: spin 1s linear infinite;
+}
+
+/* Circular Video Preview - 120px diameter */
+.video-preview {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #F5F5F4;
+  border: 2px solid #EAE9E8;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Video feed styling */
+.video-feed {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover; 
+  transform: scaleX(-1); 
+}
+
+/* Fallback if camera not available */
+.video-preview:empty::before {
+  content: '📷';
+  font-size: 24px;
+  color: #78716C;
 }
 
 @keyframes spin {

@@ -30,7 +30,7 @@
   width: 284px;
   height: 160px;
   position: relative;
-  background: #f0f0f0; /* Placeholder for image */
+  background: #f0f0f0;
   
   /* Inside auto layout */
   flex: none;
@@ -41,7 +41,7 @@
 
 /* Hover effect on video section */
 .recording-card:hover .video-section {
-  background: #00000099; /* 60% opacity black */
+  background: #00000099; 
 }
 
 /* Video overlay with gradient */
@@ -56,7 +56,7 @@
 
 /* Enhance overlay on hover */
 .recording-card:hover .video-overlay {
-  background: rgba(0, 0, 0, 0.4); /* Darker overlay on hover */
+  background: rgba(0, 0, 0, 0.4); 
 }
 
 /* Duration badge - Frame 1116601077 */
@@ -66,7 +66,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  padding: 0px;
 
   position: absolute;
   width: 65px;
@@ -78,22 +78,16 @@
   border-radius: 1000px;
 }
 
-/* 3:12 min - Exact CSS as specified */
+/* 3:12 min - Perfectly centered */
 .duration-text {
   width: 49px;
-  height: 8px;
+  height: 18px; 
 
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  /* or 150% */
-  
-  /* Note: leading-trim and text-edge are draft CSS properties */
-  /* leading-trim: both; */
-  /* text-edge: cap; */
-
   color: #FFFFFF;
 
   /* Inside auto layout */
@@ -101,8 +95,10 @@
   order: 0;
   flex-grow: 0;
   
-  /* Additional properties for proper display */
-  display: block;
+  /* Perfect center alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 

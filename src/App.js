@@ -163,7 +163,7 @@ function App() {
         <div className="components-wrapper">
           <TestCard
             title="New Onboarding Flow"
-            description="0 recordings . 12 Oct 2025"
+            description="0 recordings · 12 Oct 2025"
             onPreview={handlePreview}
             onCopy={handleCardCopy}
             onEdit={handleCardEdit}

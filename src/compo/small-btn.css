@@ -4,7 +4,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px 12px;
+  padding: 6px 9.5px; /* ✅ Fixed padding: 6px top-bottom, 9.5px left-right */
   gap: 6px;
 
   height: 28px;
@@ -30,7 +30,7 @@
   background: transparent;
   
   /* Dynamic width */
-  width: auto;
+  width: auto; /* ✅ Width automatic based on content */
   min-width: fit-content;
 }
 

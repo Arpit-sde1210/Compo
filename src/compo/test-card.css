@@ -16,6 +16,7 @@
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+  transition: all 0.2s ease;
 }
 
 /* Item container styling */
@@ -28,7 +29,6 @@
 }
 
 .test-card-title {
-  /* Exact specifications from your design */
   width: 167px;
   height: 24px;
   font-family: 'Work Sans';
@@ -43,6 +43,7 @@
   margin: 0;
   white-space: nowrap;
 }
+
 .test-card-description {
   display: flex;
   flex-direction: row;
@@ -66,6 +67,14 @@
   gap: 8px;
   align-items: center;
   justify-content: flex-start;
+  opacity: 0; /* ✅ Default me hidden */
+  visibility: hidden; /* ✅ Default me hidden */
+}
+
+/* ✅ Card hover pe actions show karo */
+.test-card:hover .test-card-actions {
+  opacity: 1; /* ✅ Show on hover */
+  visibility: visible; /* ✅ Show on hover */
 }
 
 /* Action buttons styling */
@@ -89,8 +98,8 @@
   color: #000;
 }
 
-/* INDIVIDUAL BUTTON HOVER */
-.test-card-action-btn:hover::after {
+/* ✅ TEST CARD SPECIFIC TOOLTIP - Only for test card buttons */
+.test-card .test-card-action-btn:hover::after {
   content: attr(data-tooltip);
   position: absolute;
   bottom: -35px;
@@ -110,9 +119,54 @@
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Hide tooltips by default */
-.test-card-action-btn::after {
+/* ✅ TEST CARD SPECIFIC TOOLTIP - Hide by default */
+.test-card .test-card-action-btn::after {
   content: attr(data-tooltip);
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000000;
+  color: #FFFFFF;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ IconOnlyButton ke liye bhi tooltip */
+.test-card .icon-only-btn {
+  position: relative;
+}
+
+.test-card .icon-only-btn:hover::after {
+  content: "Copy Link";
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000000;
+  color: #FFFFFF;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1000;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.test-card .icon-only-btn::after {
+  content: "Copy Link";
   position: absolute;
   bottom: -35px;
   left: 50%;
