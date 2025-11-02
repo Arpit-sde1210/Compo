@@ -6,7 +6,7 @@
   flex-direction: row;
   align-items: center;
   padding: 0px 12px;
-  gap: 15.05px; /* ✅ Yeh change karo */
+  gap: 15.05px;
 
   width: 450px;
   height: 36px;
@@ -26,9 +26,6 @@
   font-family: 'Work Sans', sans-serif;
   font-size: 14px;
   color: #000000;
-
-  /* Transition for smooth effects */
-  transition: all 0.2s ease-in-out;
 }
 
 /* Hover State - Active wali color */

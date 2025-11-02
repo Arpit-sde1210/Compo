@@ -14,11 +14,10 @@
 
 /* Circular Video Preview - 120px diameter */
 .video-preview {
-  width: 120px;  /* ✅ 120px diameter */
-  height: 120px; /* ✅ 120px diameter */
-  border-radius: 50%; /* ✅ Perfect circle */
+  width: 120px;  
+  height: 120px; 
+  border-radius: 50%; 
   background: #F5F5F4;
-  border: 2px solid #EAE9E8;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -31,7 +30,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  object-fit: cover; /* ✅ Camera feed ko circle me fit karega */
+  object-fit: cover;
 }
 
 .video-placeholder {
@@ -65,7 +64,6 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s ease;
   position: relative;
   flex-shrink: 0;
 }
@@ -76,7 +74,6 @@
 
 .stop-button:active {
   background: #CC4926;
-  transform: scale(0.95);
 }
 
 /* White square inside stop button */
@@ -99,7 +96,7 @@
 }
 
 .stop-button.loading {
-  background: #6B7280;
+  background: #CC4926;
   cursor: not-allowed;
 }
 

@@ -31,7 +31,6 @@
   /* Additional */
   border: none;
   cursor: pointer;
-  transition: all 0.2s ease;
   
   /* Dynamic width based on content */
   width: auto;

@@ -16,7 +16,6 @@
   order: 1;
   align-self: stretch;
   flex-grow: 0;
-  transition: all 0.2s ease;
 }
 
 /* Item container styling */
@@ -67,14 +66,14 @@
   gap: 8px;
   align-items: center;
   justify-content: flex-start;
-  opacity: 0; /* ✅ Default me hidden */
-  visibility: hidden; /* ✅ Default me hidden */
+  opacity: 0;
+  visibility: hidden;
 }
 
-/* ✅ Card hover pe actions show karo */
+
 .test-card:hover .test-card-actions {
-  opacity: 1; /* ✅ Show on hover */
-  visibility: visible; /* ✅ Show on hover */
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Action buttons styling */
@@ -140,7 +139,6 @@
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* ✅ IconOnlyButton ke liye bhi tooltip */
 .test-card .icon-only-btn {
   position: relative;
 }

@@ -123,17 +123,16 @@
 
 /* Video Title - Replaces Question */
 .video-title {
-  width: 100%;
-  height: auto;
+  width: 75px;
+  height: 24px;
   
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 16px;
   color: #37352F;
-  
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 /* Video Info Container - Replaces User Info */
