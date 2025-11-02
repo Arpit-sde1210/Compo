@@ -112,7 +112,7 @@ code {
 .input-group {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   padding: 20px;
   background: #FFFFFF;
   border-radius: 8px;
@@ -127,7 +127,7 @@ code {
   line-height: 20px;
   letter-spacing: 0%;
   color: #000000;
-  margin: 0 0 8px 0;
+  margin: 0;
   padding: 0;
 }
 
