@@ -1,23 +1,16 @@
 /* Recording Card */
 .recording-card {
   box-sizing: border-box;
-  
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  
   width: 284px;
   height: 238px;
-  
   background: #FFFFFF;
   border: 1px solid #EAE9E8;
-  /* Card Shadow */
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
-  
-  /* Inside auto layout */
   flex: none;
   order: 0;
   align-self: stretch;
@@ -25,26 +18,22 @@
   overflow: hidden;
 }
 
-/* Video Section - Frame 1116601075 */
+/* Video Section */
 .video-section {
   width: 284px;
   height: 160px;
   position: relative;
   background: #f0f0f0;
-  
-  /* Inside auto layout */
   flex: none;
   order: 0;
   align-self: stretch;
   flex-grow: 0;
 }
 
-/* Hover effect on video section */
 .recording-card:hover .video-section {
   background: #00000099; 
 }
 
-/* Video overlay with gradient */
 .video-overlay {
   position: absolute;
   left: 0px;
@@ -54,120 +43,104 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* Enhance overlay on hover */
 .recording-card:hover .video-overlay {
   background: rgba(0, 0, 0, 0.4); 
 }
 
-/* Duration badge - Frame 1116601077 */
+/* Duration badge */
 .duration-badge {
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0px;
-
   position: absolute;
   width: 65px;
   height: 24px;
   right: 12px;
   bottom: 12px;
-
   background: #37352F;
   border-radius: 1000px;
 }
 
-/* 3:12 min - Perfectly centered */
 .duration-text {
   width: 49px;
   height: 18px; 
-
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   color: #FFFFFF;
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
-  
-  /* Perfect center alignment */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-/* Content Section - Frame 1116600698 */
+/* Content Section - Updated spacing */
 .content-section {
-  /* Auto layout */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px;
-  gap: 4px;
-  
+  padding: 16px 16px 0 16px; /* Top padding only for the 16px gap from video section */
+  gap: 4px; /* This creates the 4px space between title and date */
   width: 284px;
   height: 78px;
-  
-  /* Inside auto layout */
   flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
 }
 
-/* Video Title - Replaces Question */
+/* Alternative approach using gap on the card itself: */
+/*
+.recording-card {
+  gap: 16px; // This creates 16px between video and content sections
+}
+.content-section {
+  padding: 0px 16px 16px 16px; // Adjust padding accordingly
+}
+*/
+
+/* Video Title */
 .video-title {
   width: 75px;
   height: 24px;
-  
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #37352F;
-  margin-bottom: 4px;
 }
 
-/* Video Info Container - Replaces User Info */
+/* Video Info Container */
 .video-info-container {
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
   gap: 8px;
-  
   width: 133px;
   height: 18px;
-  
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
-/* Video Date and Time */
 .video-date-time {
   width: 133px;
   height: 18px;
-
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 18px;
-  /* identical to box height, or 150% */
-
+  line-height: 4px;
   color: #78716C;
-
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
