@@ -11,7 +11,7 @@ const TestCard = ({ title, description, onPreview, onCopy, onEdit, onDelete }) =
       </div>
       
       <div className="test-card-actions">
-        {/* Preview Button - Using SmallButton component */}
+        {/* Preview Button - Using SmallButton component (as before) */}
         <Button 
           onClick={onPreview}
           data-tooltip="Preview"
@@ -22,33 +22,30 @@ const TestCard = ({ title, description, onPreview, onCopy, onEdit, onDelete }) =
           </svg>
         </Button>
 
-        {/* Copy Button - Using IconOnlyButton component */}
+        {/* Copy Button */}
         <IconOnlyButton 
+          iconType="copy"
           onClick={onCopy}
-          data-tooltip="Copy Link"
+          tooltip="Copy Link"
+          className="test-card-action-btn"
         />
 
         {/* Edit Button */}
-        <button 
-          className="test-card-action-btn edit" 
+        <IconOnlyButton 
+          iconType="edit"
           onClick={onEdit}
-          data-tooltip="Edit"
-        >
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14 19.3332H20M16.9173 8.41449C17.1827 8.1491 17.5427 8 17.918 8C18.2933 8 18.6533 8.1491 18.9187 8.41449C19.1841 8.67988 19.3332 9.03983 19.3332 9.41516C19.3332 9.79048 19.1841 10.1504 18.9187 10.4158L10.912 18.4232C10.7534 18.5818 10.5574 18.6978 10.342 18.7605L8.42734 19.3192C8.36997 19.3359 8.30916 19.3369 8.25128 19.3221C8.19339 19.3072 8.14056 19.2771 8.0983 19.2349C8.05605 19.1926 8.02593 19.1398 8.0111 19.0819C7.99627 19.024 7.99727 18.9632 8.014 18.9058L8.57267 16.9912C8.63549 16.776 8.7515 16.5802 8.91 16.4218L16.9173 8.41449Z" stroke="currentColor" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </button>
+          tooltip="Edit"
+          className="test-card-action-btn"
+        />
 
         {/* Delete Button */}
-        <button 
-          className="test-card-action-btn delete" 
+        <IconOnlyButton 
+          iconType="delete"
           onClick={onDelete}
-          data-tooltip="Delete"
-        >
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 9.99991H20M18.6667 9.99991V19.3332C18.6667 19.9999 18 20.6666 17.3334 20.6666H10.6667C10 20.6666 9.33337 19.9999 9.33337 19.3332V9.99991M11.3334 9.99992V8.66659C11.3334 7.99992 12 7.33325 12.6667 7.33325H15.3334C16 7.33325 16.6667 7.99992 16.6667 8.66659V9.99992M12.6666 13.3333V17.3333M15.3334 13.3333V17.3333" stroke="currentColor" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </button>
+          variant="danger"
+          tooltip="Delete"
+          className="test-card-action-btn"
+        />
       </div>
     </div>
   );
