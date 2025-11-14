@@ -159,7 +159,7 @@ function App() {
         <div className="horizontal-line"></div>
 
         {/* Main Components Section */}
-        <h2 className="section-heading">Main Components</h2>
+        {/* <h2 className="section-heading">Main Components</h2>
         <div className="components-wrapper">
           <TestCard
             title="New Onboarding Flow"
@@ -169,7 +169,7 @@ function App() {
             onEdit={handleCardEdit}
             onDelete={handleCardDelete}
           />
-        </div>
+        </div> */}
         <div className="horizontal-line"></div>
         <h2 className="section-heading">Recording Card</h2>
 
