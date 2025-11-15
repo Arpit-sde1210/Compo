@@ -18,7 +18,6 @@
   flex-grow: 0;
 }
 
-/* Item container styling */
 .test-card-content {
   display: flex;
   flex-direction: column;
@@ -70,13 +69,11 @@
   visibility: hidden;
 }
 
-
 .test-card:hover .test-card-actions {
   opacity: 1;
   visibility: visible;
 }
 
-/* Action buttons styling */
 .test-card-action-btn {
   display: flex;
   align-items: center;
@@ -89,15 +86,15 @@
   border: none;
   position: relative;
   color: #555;
+  width: 28px;  /* YEH ADD KARNA THA */
+  height: 28px; /* YEH ADD KARNA THA */
 }
 
-/* Hover effects */
 .test-card-action-btn:hover {
   background-color: #F5F5F4;
   color: #000;
 }
 
-/* ✅ TEST CARD SPECIFIC TOOLTIP - Only for test card buttons */
 .test-card .test-card-action-btn:hover::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -118,7 +115,6 @@
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* ✅ TEST CARD SPECIFIC TOOLTIP - Hide by default */
 .test-card .test-card-action-btn::after {
   content: attr(data-tooltip);
   position: absolute;
@@ -139,12 +135,8 @@
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.test-card .icon-only-btn {
-  position: relative;
-}
-
 .test-card .icon-only-btn:hover::after {
-  content: "Copy Link";
+  content: attr(data-tooltip);
   position: absolute;
   bottom: -35px;
   left: 50%;
@@ -164,7 +156,7 @@
 }
 
 .test-card .icon-only-btn::after {
-  content: "Copy Link";
+  content: attr(data-tooltip);
   position: absolute;
   bottom: -35px;
   left: 50%;
