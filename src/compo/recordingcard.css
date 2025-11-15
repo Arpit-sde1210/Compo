@@ -86,8 +86,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 16px 0 16px; /* Top padding only for the 16px gap from video section */
-  gap: 4px; /* This creates the 4px space between title and date */
+  padding: 16px 16px 16px 16px; 
+  gap: 4px;
   width: 284px;
   height: 78px;
   flex: none;
@@ -95,17 +95,6 @@
   align-self: stretch;
   flex-grow: 0;
 }
-
-/* Alternative approach using gap on the card itself: */
-/*
-.recording-card {
-  gap: 16px; // This creates 16px between video and content sections
-}
-.content-section {
-  padding: 0px 16px 16px 16px; // Adjust padding accordingly
-}
-*/
-
 /* Video Title */
 .video-title {
   width: 75px;
