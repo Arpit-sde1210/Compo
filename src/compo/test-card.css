@@ -86,8 +86,8 @@
   border: none;
   position: relative;
   color: #555;
-  width: 28px;  /* YEH ADD KARNA THA */
-  height: 28px; /* YEH ADD KARNA THA */
+  width: 28px;
+  height: 28px;
 }
 
 .test-card-action-btn:hover {
@@ -98,12 +98,12 @@
 .test-card .test-card-action-btn:hover::after {
   content: attr(data-tooltip);
   position: absolute;
-  bottom: -35px;
+  bottom: -44px;
   left: 50%;
   transform: translateX(-50%);
   background: #000000;
   color: #FFFFFF;
-  padding: 8px 12px;
+  padding: 6px 8px;
   border-radius: 6px;
   font-family: 'Work Sans', sans-serif;
   font-size: 12px;
@@ -118,12 +118,12 @@
 .test-card .test-card-action-btn::after {
   content: attr(data-tooltip);
   position: absolute;
-  bottom: -35px;
+  bottom: -44px;
   left: 50%;
   transform: translateX(-50%);
   background: #000000;
   color: #FFFFFF;
-  padding: 8px 12px;
+  padding: 6px 8px;
   border-radius: 6px;
   font-family: 'Work Sans', sans-serif;
   font-size: 12px;
@@ -138,12 +138,12 @@
 .test-card .icon-only-btn:hover::after {
   content: attr(data-tooltip);
   position: absolute;
-  bottom: -35px;
+  bottom: -44px;
   left: 50%;
   transform: translateX(-50%);
   background: #000000;
   color: #FFFFFF;
-  padding: 8px 12px;
+  padding: 6px 8px;
   border-radius: 6px;
   font-family: 'Work Sans', sans-serif;
   font-size: 12px;
@@ -158,12 +158,12 @@
 .test-card .icon-only-btn::after {
   content: attr(data-tooltip);
   position: absolute;
-  bottom: -35px;
+  bottom: -44px;
   left: 50%;
   transform: translateX(-50%);
   background: #000000;
   color: #FFFFFF;
-  padding: 8px 12px;
+  padding: 6px 8px;
   border-radius: 6px;
   font-family: 'Work Sans', sans-serif;
   font-size: 12px;

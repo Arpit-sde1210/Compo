@@ -81,58 +81,65 @@
   text-align: center;
 }
 
-/* Content Section - Updated spacing */
+/* Content Section - FIXED */
 .content-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px 16px 16px 16px; 
+  padding: 16px;
   gap: 4px;
-  width: 284px;
-  height: 78px;
+  width: 100%;
   flex: none;
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+  box-sizing: border-box;
 }
-/* Video Title */
+
+/* Video Title - FIXED */
 .video-title {
-  width: 75px;
-  height: 24px;
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   color: #37352F;
+  margin: 0;
+  padding: 0;
+  height: auto;
 }
 
-/* Video Info Container */
+/* Video Info Container - FIXED */
 .video-info-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0px;
-  gap: 8px;
-  width: 133px;
-  height: 18px;
+  gap: 4px;
+  width: auto;
+  height: auto;
   flex: none;
   order: 0;
   flex-grow: 0;
+  margin: 0;
 }
 
 .video-date-time {
-  width: 133px;
-  height: 18px;
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 4px;
+  line-height: 18px;
   color: #78716C;
   flex: none;
   order: 0;
   flex-grow: 0;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  height: auto;
 }
 
 /* Responsive adjustments */

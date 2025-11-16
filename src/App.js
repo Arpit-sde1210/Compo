@@ -15,6 +15,7 @@ import TestCard from './compo/test-card';
 import RecordingCard from './compo/recordingcard';
 import Menu from './compo/menu';
 import Recorder from './compo/recorder';
+import Summary from './compo/summary'; // Add this import
 import './index.css';
 
 function App() {
@@ -170,11 +171,11 @@ function App() {
             onDelete={handleCardDelete}
           />
         </div>
+        
         <div className="horizontal-line"></div>
+        
         <h2 className="section-heading">Recording Card</h2>
-
         <div className="components-wrapper">
-          {/* Recording Card Component */}
           <RecordingCard
             username={recordingData.username}
             stats={recordingData.stats}
@@ -183,17 +184,27 @@ function App() {
             duration={recordingData.duration}
           />
         </div>
+        
         <div className="horizontal-line"></div>
+        
         <h2 className="section-heading">Menu</h2>
         <div className="components-wrapper">
-          <Menu 
-          />
+          <Menu />
         </div>
+        
         <div className="horizontal-line"></div>
+        
         <h2 className="section-heading">Recording</h2>
         <div className="components-wrapper">
-          <Recorder
-          />
+          <Recorder />
+        </div>
+
+        {/* Add Summary Component Section */}
+        <div className="horizontal-line"></div>
+        
+        <h2 className="section-heading">Summary</h2>
+        <div className="components-wrapper">
+          <Summary />
         </div>
       </div>
     </div>
