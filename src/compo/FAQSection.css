@@ -1,0 +1,126 @@
+/* FAQSection.css */
+.faq-section.frame-1116600976 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  gap: 40px;
+  width: 1440px;
+  height: 872px;
+  flex: none;
+  order: 6;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.faq-title {
+  width: 1440px;
+  height: 48px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+  color: #37352F;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.faq-container.frame-80 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 640px;
+  height: 624px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.faq-item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  gap: 24px;
+  width: 640px;
+  height: 64px;
+  background: #FFFFFF;
+  border: 1px solid #EAE9E8;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  cursor: pointer;
+}
+
+.faq-question {
+  margin: 0 auto;
+  width: fit-content;
+  height: 16px;
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  color: #2F3537;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.chevron-right {
+  margin: 0 auto;
+  width: 24px;
+  height: 24px;
+  transform: rotate(90deg);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  transition: transform 0.3s ease;
+}
+
+.chevron-right.open {
+  transform: rotate(-90deg);
+}
+
+.chevron-right .vector {
+  position: absolute;
+  left: 25%;
+  right: 50%;
+  top: 37.5%;
+  bottom: 12.5%;
+  border: 1.5px solid #2F3537;
+  transform: rotate(90deg);
+}
+
+.faq-answer {
+  padding: 20px 24px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #78716C;
+  border-top: 1px solid #EAE9E8;
+}
+
+/* Specific width classes for each FAQ item */
+.frame-21 .faq-question { width: 255px; }
+.frame-23 .faq-question { width: 248px; }
+.frame-25 .faq-question { width: 332px; }
+.frame-28 .faq-question { width: 251px; }
+.frame-29 .faq-question { width: 281px; }
+.frame-30 .faq-question { width: 302px; }
+.frame-32 .faq-question { width: 367px; }
+.frame-26 .faq-question { width: 249px; }
