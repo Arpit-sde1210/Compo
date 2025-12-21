@@ -1,6 +1,5 @@
-// App.js
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './index.css';
 
 import Navbar from './compo/Navbar';
@@ -14,7 +13,7 @@ import Contact from './compo/ContactUs';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
 
       <Routes>
@@ -25,7 +24,7 @@ function App() {
       </Routes>
 
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 
