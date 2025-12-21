@@ -1,4 +1,4 @@
-/* ===== PRICING SECTION ===== */
+/* ===== SECTION ===== */
 .pricing-section {
   width: 100%;
   background: #f8f8ef;
@@ -6,17 +6,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 48px;
 }
 
 /* ===== HEADER ===== */
 .pricing-header {
   text-align: center;
-  max-width: 740px;
+  max-width: 760px;
 }
 
 .pricing-badge {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: #00ab56;
 }
@@ -33,56 +33,50 @@
   width: 100%;
   max-width: 640px;
   background: #ffffff;
-  border: 1px solid #eae9e8;
   border-radius: 16px;
   padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+  gap: 28px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.05);
 }
 
 /* ===== TOGGLE ===== */
 .pricing-toggle {
+  background: #f8f8ef;
+  padding: 6px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: #f8f8ef;
-  border-radius: 12px;
-  padding: 6px;
+  gap: 6px;
 }
 
 .toggle-option {
   flex: 1;
   height: 36px;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .toggle-option.active {
   background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
 }
 
-/* ===== DISCOUNT ===== */
 .discount-badge {
   background: #ffaa00;
-  border-radius: 4px;
-  padding: 4px 6px;
-  font-size: 12px;
-  font-weight: 500;
   color: #ffffff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
-/* ===== PRICE + FEATURES ===== */
-.price-display {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-/* Price */
+/* ===== PRICE ===== */
 .price-container {
   display: flex;
   align-items: baseline;
@@ -100,11 +94,11 @@
   color: #78716c;
 }
 
-/* ===== FEATURES LIST ===== */
+/* ===== FEATURES ===== */
 .features-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .feature-item {
@@ -113,7 +107,6 @@
   gap: 12px;
 }
 
-/* ✅ FIXED CHECK ICON */
 .check-icon {
   width: 16px;
   height: 16px;
@@ -122,16 +115,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-}
-
-.check-icon span {
   font-size: 10px;
-  line-height: 1;
   color: #78716c;
 }
 
-/* Feature text */
 .feature-text {
   font-size: 14px;
   font-weight: 500;

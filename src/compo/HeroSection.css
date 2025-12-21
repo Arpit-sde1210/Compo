@@ -1,8 +1,10 @@
 .hero-section {
-  text-align: center;
   position: relative;
+  text-align: center;
+  padding-top: 40px;
 }
 
+/* Background highlight */
 .highlight-bg {
   position: absolute;
   top: 32px;
@@ -15,33 +17,38 @@
   z-index: -1;
 }
 
-.dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: #1abcfe;
-  border-radius: 50%;
-  margin: 0 4px;
+/* Title */
+.hero-title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.1;
+  color: #37352f;
 }
 
-.figma-dots {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(
-    to bottom,
-    #ff7262,
-    #a259ff,
-    #1abcfe,
-    #0acf83
-  );
-  border-radius: 50%;
+/* INLINE ICON FIX 🔥 */
+.inline-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
 }
 
-.hero-section p {
+/* Blue dot slight adjustment */
+.blue-dot {
+  transform: translateY(-2px);
+}
+
+/* Figma logo adjustment */
+.figma-icon {
+  transform: translateY(2px);
+}
+
+/* Description */
+.hero-description {
   max-width: 720px;
   margin: 24px auto 0;
-}
-.hero-title svg {
-  margin: 0 10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #78716c;
 }

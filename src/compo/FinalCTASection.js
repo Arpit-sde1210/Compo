@@ -1,5 +1,5 @@
 import React from 'react';
-import PrimaryButton from '../compo/primary-btn';
+import PrimaryButton from '../compo/error-btn';
 import './FinalCTASection.css';
 
 const FinalCTASection = () => {
@@ -17,7 +17,7 @@ const FinalCTASection = () => {
       </div>
       
       <PrimaryButton onClick={handleCreateTest} className="cta-button">
-        Create test
+        Get Started
       </PrimaryButton>
     </section>
   );

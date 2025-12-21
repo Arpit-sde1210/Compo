@@ -9,9 +9,17 @@ const HeroSection = () => {
       <div className="highlight-bg" />
 
       <h1 className="hero-title">
-        Fastest way to get <BlueDot size={20} /> Feedback
+        Fastest way to get{' '}
+        <span className="inline-icon blue-dot">
+          <BlueDot size={20} />
+        </span>{' '}
+        Feedback
         <br />
-        on your <FigmaLogo size={24} /> Designs
+        on your{' '}
+        <span className="inline-icon figma-icon">
+          <FigmaLogo size={24} />
+        </span>{' '}
+        Designs
       </h1>
 
       <p className="hero-description">

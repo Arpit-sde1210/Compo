@@ -1,12 +1,14 @@
+// Footer.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="frame-29 footer">
-      <a href="#terms" className="footer-link">Terms of Use</a>
-      <a href="#privacy" className="footer-link">Privacy</a>
-      <a href="#contact" className="footer-link">Contact</a>
+    <footer className="footer frame-29">
+      <Link to="/terms" className="footer-link">Terms of Use</Link>
+      <Link to="/privacy" className="footer-link">Privacy</Link>
+      <Link to="/contact" className="footer-link">Contact</Link>
     </footer>
   );
 };

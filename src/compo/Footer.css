@@ -1,34 +1,19 @@
-/* Footer.css */
-.footer.frame-29 {
+.footer {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 40px 90px;
   gap: 24px;
-  width: 1440px;
-  height: 100px;
-  background: #FCFCF9;
-  flex: none;
-  order: 8;
-  align-self: stretch;
-  flex-grow: 0;
+  padding: 40px 16px;
+  background: #fcfcf9;
 }
 
 .footer-link {
   font-family: 'Work Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #37352F;
+  color: #37352f;
   text-decoration: none;
 }
 
-.footer-link:nth-child(1) { width: 90px; }  /* Terms of Use */
-.footer-link:nth-child(2) { width: 48px; }  /* Privacy */
-.footer-link:nth-child(3) { width: 55px; }  /* Contact */
-
+.footer-link:hover {
+  text-decoration: underline;
+}

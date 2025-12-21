@@ -35,7 +35,7 @@ body {
 
 /* HERO WRAPPER */
 .hero-wrapper {
-  padding: 120px 0 80px;
+  padding: 0px 0 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
