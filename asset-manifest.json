@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Compo/static/css/main.21c73d27.css",
-    "main.js": "/Compo/static/js/main.b0587faf.js",
+    "main.js": "/Compo/static/js/main.692efd90.js",
     "static/js/453.5a047ff7.chunk.js": "/Compo/static/js/453.5a047ff7.chunk.js",
     "static/media/heatmaps.svg": "/Compo/static/media/heatmaps.3d8ca877496e42cb8ae9b623c186f4f4.svg",
     "static/media/collaboration.svg": "/Compo/static/media/collaboration.16f6d9e72f85bf3032277a4927e88ce9.svg",
@@ -15,11 +15,11 @@
     "static/media/process-arrow.svg": "/Compo/static/media/process-arrow.273edd95f1ee8fe576597f9ac5fb93e2.svg",
     "static/media/arrow-down.svg": "/Compo/static/media/arrow-down.e0ce0e7f192730f59547a02970b46f99.svg",
     "main.21c73d27.css.map": "/Compo/static/css/main.21c73d27.css.map",
-    "main.b0587faf.js.map": "/Compo/static/js/main.b0587faf.js.map",
+    "main.692efd90.js.map": "/Compo/static/js/main.692efd90.js.map",
     "453.5a047ff7.chunk.js.map": "/Compo/static/js/453.5a047ff7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21c73d27.css",
-    "static/js/main.b0587faf.js"
+    "static/js/main.692efd90.js"
   ]
 }
